@@ -1,0 +1,274 @@
+body {
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-60deg, #F8A442, #f7dabe, #e36b13);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Sans', sans-serif;  
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+img:hover{
+    opacity: 90%;
+}
+.font{
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Sans', sans-serif;  
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    cursor:pointer;
+}
+p:hover{
+    opacity: 30%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* NAV BAR */
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+}
+
+.logo{
+    flex: 1;
+    padding-left: 2em;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex: 4;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav li a{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+/* profile pic */
+.profilePic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.name{
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.profession{
+    margin: 0;
+}
+
+.profilePic img{
+    margin-top: 50vh;
+    border-radius: 50%;
+    height: 30VH;
+    width: 30VH;
+}
+
+.socialMedia{
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.download {
+    margin-top: 40px;
+}
+.download a{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.socialMedia i{
+    margin: 0px 15px ;
+}
+
+nav ul li :hover{
+    background-color: #F8A442;
+    color: white;
+}
+
+.download a:hover{
+    background-color: #F8A442;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+.aboutContainer{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    padding: 50px;
+    margin: 8% 8%;
+    background-color: #F7DABE;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 20%;
+}
+
+.title{
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.line{
+    margin-top: -20px;
+    width: 25%;
+    height: 2px;
+    background-color: #e36b13;
+}
+/* aboutsection 1 */
+
+/* aboutsection 1 - about info */
+.aboutinfo{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.aboutSec1{
+    display: flex;
+}
+
+.aboutPic img{
+    height: 300px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+
+}
+
+/* aboutsection 1 - personal info */
+
+.info i{
+    color: #f0f6fd;
+}
+
+.infoCards{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+ .cards{
+    height: fit-content;
+    color: #f0f6fd;
+    display: grid;
+    padding: 5px;
+    background-color: #e36b13;
+    border-radius: 5px;
+    font-weight: 400;
+ }
+ .info{
+    display: flex;
+    width: 100%;
+ }
+ .info i{
+    margin: 0;
+ }
+ .info p{
+    margin-left: 30px;
+ } 
+ .aboutIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px;
+ }
+
+.skillLevel{
+    width: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    margin: 10px 30px;
+    height: fit-content;
+
+}
+.skill{
+}
+
+.backBar{
+    background-color: #f0f6fd;
+    width: 100%;
+    height: 10px;
+}
+
+.bar1{
+    width: 90%;
+    height: 10px;
+    background-color: #e36b13;
+}
+.bar2{
+    width: 80%;
+    height: 10px;
+    background-color: #e36b13;
+}
+.bar3{
+    width: 30%;
+    height: 10px;
+    background-color: #e36b13;
+}
+.bar4{
+    width: 30%;
+    height: 10px;
+    background-color: #e36b13;
+}
+.bar5{
+    width: 80%;
+    height: 10px;
+    background-color: #e36b13;
+}
+
+
