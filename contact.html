@@ -13,25 +13,50 @@
 </head>
 <body>
     <nav>
-        <i class="fa-sharp fa-solid fa-user fa-3x logo"></i>
-        <ul>
+        <label class="logo">PROTFOLIO</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- <i class="fa-sharp fa-solid fa-user fa-3x logo"></i> -->
+        <ul id="list">
             <li><a href="./index.html"><i class="fa-sharp fa-solid fa-house fa-sm"></i> HOME</a></li>
             <li><a href="./about.html"><i class="fa-sharp fa-solid fa-address-card"></i> ABOUT</a></li>
             <li><a><i class="fa-solid fa-bars-progress"></i> PROJECTS</a></li>
-            <li><a><i class="fa-solid fa-address-book"></i> CONTACT</a></li>
+            <li><a href="./contact.html"><i class="fa-solid fa-address-book"></i> CONTACT</a></li>
         </ul>
 
     </nav>
-    <div class="section2">
+    <!-- <div class="section2">
         <div class="contact_container">
-            <p>CONTACT ME</p>
             <form action="">
+                <p>CONTACT ME</p>
                 <label>NAME <br></label>
                 <input type="text" placeholder="Enter your name" class="nameBox"><br>
                 <label>MAIL ID <br></label>
                 <input type="email" class="mailBox"><br>
                 <label>MESSAGE <br></label>
                 <input type="text" class="msgBox">
+                <div class="btn">
+                    <button class="subBtn" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <div class="contactSection">
+        <div class="contactContent">
+            <form>
+                <label>CONTACT ME</label>
+                <div class="inputBox"> 
+                    <input type="text" required> <span>YOUR NAME</span> 
+                </div>
+                <div class="inputBox"> 
+                    <input type="text" required> <span>EMAIL</span> 
+                </div>
+                <div class="inputBox"> 
+                    <input type="text" required> <span>MESSAGE</span> 
+                </div> 
                 <div class="btn">
                     <button class="subBtn" type="submit">SUBMIT</button>
                 </div>
