@@ -87,6 +87,7 @@ nav ul li a {
     label.logo{
         font-size: 30px;
         padding-left: 50px;
+        padding-right: 0;
 
     }
     nav ul li a{
@@ -256,21 +257,11 @@ nav ul li :hover{
     background-color: #e36b13;
 }
 
-@media (max-width:858px){
-    .aboutSec1{
-        flex-direction: column;
-    }
-    .aboutPic{
-        display: flex;
-        justify-content: center;
-    }
-    .content{
-        padding: 0;
-    }
-}
+
 /* aboutsection 1 */
 
 /* aboutsection 1 - about info */
+
 .aboutinfo{
     display: flex;
     flex-direction: column;
@@ -374,7 +365,21 @@ nav ul li :hover{
     background-color: #e36b13;
 }
 
-
+@media (max-width:858px){
+    .aboutSec1{
+        flex-direction: column;
+    }
+    .aboutPic{
+        display: flex;
+        justify-content: center;
+    }
+    .content{
+        padding: 0;
+    }
+    .infoCards{
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
