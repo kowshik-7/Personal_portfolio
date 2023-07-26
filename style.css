@@ -42,15 +42,94 @@ p:hover{
 
 
 /* NAV BAR */
-
-
 nav{
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.checkbtn{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width:925px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -200px;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        line-height: 80px;
+    }
+    nav ul li{
+        font-size: 20px;
+
+    }
+    #check:checked ~ ul{
+        left: 0px;
+    }
+    /* #check ~ ul{
+        left: -200px;
+    } */
+}
+
+/* nav{
     display: flex;
     flex-direction: row;
     padding-top: 2em;
-}
+} */
 
-.logo{
+
+/* .logo{
     flex: 1;
     padding-left: 2em;
 }
@@ -71,9 +150,14 @@ nav li a{
     border-radius: 5px;
     text-decoration: none;
     color: black;
-}
+} */
 
 /* profile pic */
+.continer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .profilePic{
     display: flex;
     flex-direction: column;
@@ -143,10 +227,14 @@ nav ul li :hover{
 /* ABOUT PAGE */
 
 .aboutContainer{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .content{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
     padding: 50px;
     margin: 8% 8%;
     background-color: #F7DABE;
@@ -167,10 +255,25 @@ nav ul li :hover{
     height: 2px;
     background-color: #e36b13;
 }
+
+@media (max-width:858px){
+    .aboutSec1{
+        flex-direction: column;
+    }
+    .aboutPic{
+        display: flex;
+        justify-content: center;
+    }
+    .content{
+        padding: 0;
+    }
+}
 /* aboutsection 1 */
 
 /* aboutsection 1 - about info */
 .aboutinfo{
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
 }
